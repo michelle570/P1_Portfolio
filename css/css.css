@@ -1,8 +1,6 @@
-/* Dark Purple: #3F165B*/
-
 body {
   font-size: 10px;
-  font-family: georgia, Garamond, Times New Roman,serif;
+  font-family: georgia, Garamond, "Times New Roman",serif;
   font-size: 1.1rem;
   min-width: 300px;
 }
