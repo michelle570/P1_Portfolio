@@ -4,35 +4,36 @@ body {
   font-size: 10px;
   font-family: georgia, Garamond, Times New Roman,serif;
   font-size: 1.1rem;
+  min-width: 300px;
 }
 
 /*Header*/
 .Logo {
   width: 100px;
   height: 100px;
-  padding: 10px 0 10px 10px;
+  padding: 10px 0;
 }
 
 header {
   display: flex;
   align-items: center;
+  padding: 0px 15px 0px 10px;
 }
 
 .HeaderInfo {
   flex: 1;
   justify-content: flex-end;
   text-align: right;
-  padding: 0 15px 0 0;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
   padding: 0 0 4px 0;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.4rem;
 }
 
 /*Main Image*/
@@ -42,17 +43,18 @@ h3 {
 
 p {
   padding: 15px;
-  line-height: 1.2em;
+  line-height: 1.2rem;
+  font-size: 1.1rem;
 }
 
 /*content*/
 .FeaturedWork {
-  padding: 10px;
+  padding: 10px 10px 0px 10px;
 }
 
 .FWHEader {
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 1.4rem;
   color: #3F165B;
   padding: 0px 0px 10px 0px;
 }
@@ -62,10 +64,63 @@ p {
   display: flex;
   flex-direction: column;
 }
-/*change to ROW on Media Query*/
 
 .Item {
-  background-color: #ccc;
+  background-color: #d9cee0;
+  margin-bottom: 10px;
 }
 
-.Item img {width: 100%}
+.Item img {
+  width: 100%;
+}
+
+.Item p {
+  padding-top: 7px;
+}
+
+.Item a {
+  text-decoration: none;
+  color: #3F165B;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Item a:hover {
+  color: #333;
+}
+
+h4 {
+ font-size: 1.2rem;
+ font-weight: bold;
+ padding: 8px 15px 0px 15px;
+}
+
+@media screen and (min-width: 600px) {
+  p {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2.9rem;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  .Item {
+    width: 32.5%;
+  }
+
+  .Items {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
